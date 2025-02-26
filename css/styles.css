@@ -53,3 +53,116 @@ body {
 .sidebar .nav-link:hover i {
     color: #fff;
 }
+
+/*Navbar*/
+.nav-vertical {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.nav-vertical .input-group-text {
+    background-color: #fff;
+    color: gray;
+}
+
+.nav-vertical .form-control {
+    max-width: 500px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.credits {
+    color: #8c00ff;
+    font-size: 14px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.progress-bar {
+    background-color: #19b4ee;
+}
+
+.progress {
+    background-color: #e0f7ff;
+    height: 6px;
+    border-radius: 5px;
+}
+
+/* Estilos para mobile - Menu hambúrguer */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .navbar-toggler {
+        border: none;
+        color: #17a2b8;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+    .nav-vertical {
+        margin-left: 0px;
+    }
+
+    .input-group.search-bar {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        display: none;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .profile-details {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    .profile-info img,
+    .profile-info i {
+        margin-top: 10px;
+    }
+}
+
+/*Conteudo principal*/
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
