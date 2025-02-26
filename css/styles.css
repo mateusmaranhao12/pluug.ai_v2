@@ -41,7 +41,6 @@ body {
 .sidebar .nav-link i {
     margin-right: 10px;
     font-size: 1.2rem;
-    color: #17a2b8;
     transition: color 0.3s ease-in-out;
 }
 
@@ -52,6 +51,63 @@ body {
 
 .sidebar .nav-link:hover i {
     color: #fff;
+}
+
+.submenu {
+    padding-left: 30px;
+    display: none;
+}
+
+.nav-item.open .submenu {
+    display: block;
+}
+
+.fa-th {
+    color: navy;
+}
+
+.fa-user {
+    color: rgb(0, 140, 255);
+}
+
+.fa-robot {
+    color: rgb(153, 0, 255);
+}
+
+.fa-bolt {
+    color: darkred;
+}
+
+.fa-paint-brush {
+    color: rgb(108, 155, 39);
+}
+
+.fa-project-diagram {
+    color: #000;
+}
+
+.fa-folder {
+    color: rgb(255, 174, 0);
+}
+
+.fa-check-square {
+    color: darkblue;
+}
+
+.fa-wallet {
+    color: green;
+}
+
+.fa-headset {
+    color: brown;
+}
+
+.fa-cog {
+    color: gray;
+}
+
+.fa-globe {
+    color: rgb(0, 153, 255);
 }
 
 /*Navbar*/
