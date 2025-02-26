@@ -1,0 +1,55 @@
+/*Sidebar*/
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.nav-link.active {
+    background: rgb(19, 180, 238);
+    background: radial-gradient(circle, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: white !important;
+    border-radius: 10px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #17a2b8;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgb(19, 180, 238);
+    color: #fff;
+}
+
+.sidebar .nav-link:hover i {
+    color: #fff;
+}
