@@ -1,6 +1,12 @@
-/*Sidebar*/
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Evita o scroll horizontal */
 }
 
 .navbar-brand img {
@@ -32,24 +38,19 @@ body {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #828282;
     font-weight: 500;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.sidebar .nav-link i {
+.sidebar .nav-link .icones {
     margin-right: 10px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
+    height: 30px;
 }
 
 .sidebar .nav-link:hover {
     background-color: rgb(19, 180, 238);
-    color: #fff;
-}
-
-.sidebar .nav-link:hover i {
     color: #fff;
 }
 
@@ -62,69 +63,12 @@ body {
     display: block;
 }
 
-.fa-th {
-    color: navy;
-}
-
-.fa-user {
-    color: rgb(0, 140, 255);
-}
-
-.fa-robot {
-    color: rgb(153, 0, 255);
-}
-
-.fa-bolt {
-    color: darkred;
-}
-
-.fa-paint-brush {
-    color: rgb(108, 155, 39);
-}
-
-.fa-project-diagram {
-    color: #000;
-}
-
-.fa-folder {
-    color: rgb(255, 174, 0);
-}
-
-.fa-check-square {
-    color: darkblue;
-}
-
-.fa-wallet {
-    color: green;
-}
-
-.fa-headset {
-    color: brown;
-}
-
-.fa-cog {
-    color: gray;
-}
-
-.fa-globe {
-    color: rgb(0, 153, 255);
-}
-
 /*Navbar*/
 .nav-vertical {
     margin-left: 250px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-}
-
-.nav-vertical .input-group-text {
-    background-color: #fff;
-    color: gray;
-}
-
-.nav-vertical .form-control {
-    max-width: 500px;
 }
 
 .profile-info {
@@ -197,12 +141,9 @@ body {
     width: 100%;
 }
 
-.profile-info .fa-th-large {
-    color: navy;
-}
-
-.profile-info .fa-user-pen {
-    color:rgb(0, 152, 155);
+.icones-dropdown {
+    margin-right: 10px;
+    height: 30px;
 }
 
 .profile-info .btn-sair {
@@ -218,7 +159,136 @@ body {
     background-color: rgb(30, 0, 100);
 }
 
-/* Estilos para mobile - Menu hambúrguer */
+/*Conteudo principal*/
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/*Top trends*/
+.top-trends {
+    padding: 20px;
+}
+
+.top-trends h1 {
+    color: #3EBBEB;
+    font-weight: bold;
+}
+
+.top-trends p {
+    color: #8A8A8A;
+}
+
+/*Oscar*/
+.oscar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+}
+
+.oscar p,
+h3 {
+    color: #3D4040;
+}
+
+.oscar .btn-youtube {
+    background-color: #CE5059;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    width: 160px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.oscar .btn-youtube:hover {
+    background-color: #9c252d;
+}
+
+.oscar .btn-visualizacoes {
+    background: rgb(19, 180, 238);
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: transform .3s ease;
+    width: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.oscar .btn-visualizacoes:hover {
+    transform: scale(1.1);
+}
+
+.btn-aproveitar-trends {
+    background: rgb(209, 81, 83);
+    background: linear-gradient(90deg, rgba(209, 81, 83, 1) 0%, rgba(134, 46, 246, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: transform .3s ease;
+    width: 300px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn-aproveitar-trends:hover {
+    transform: scale(1.1);
+}
+
+/* Carrossel */
+.carousel-container-oscar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track-oscar {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card-oscar {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .carousel-card-oscar {
+        min-width: 33.33%;
+    }
+}
+
+/* Indicadores */
+.carousel-indicators-oscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-indicators-oscar button {
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.carousel-indicators-oscar button.active {
+    background-color: #007bff;
+}
+
+/* Estilos para mobile */
 @media (max-width: 768px) {
     .sidebar {
         position: relative;
@@ -245,16 +315,6 @@ body {
         margin-left: 0px;
     }
 
-    .input-group.search-bar {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .input-group {
-        display: none;
-    }
-
     .profile-info {
         flex-direction: column;
         align-items: center !important;
@@ -275,10 +335,22 @@ body {
     .menu-dropdown {
         margin-top: 240px;
     }
-}
 
-/*Conteudo principal*/
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
+    .main-content {
+        margin-left: 0px !important;
+        padding: 0px !important;
+    }
+
+    .top-trends {
+        text-align: center;
+    }
+
+    .carousel-card-oscar {
+        min-width: 100%;
+        padding: 0 20px;
+    }
+
+    .carousel-container-oscar {
+        padding: 0;
+    }
 }
