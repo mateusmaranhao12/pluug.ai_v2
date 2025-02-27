@@ -162,6 +162,62 @@ body {
     border-radius: 5px;
 }
 
+/*Menu dropdown*/
+.menu-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px;
+    display: none;
+    margin-top: 70px;
+}
+
+.menu-dropdown.active {
+    display: block;
+}
+
+.menu-dropdown a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.menu-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-dropdown .btn-logout {
+    width: 100%;
+}
+
+.profile-info .fa-th-large {
+    color: navy;
+}
+
+.profile-info .fa-user-pen {
+    color:rgb(0, 152, 155);
+}
+
+.profile-info .btn-sair {
+    background-color: rgb(98, 43, 226);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.profile-info .btn-sair:hover {
+    background-color: rgb(30, 0, 100);
+}
+
 /* Estilos para mobile - Menu hambúrguer */
 @media (max-width: 768px) {
     .sidebar {
@@ -214,6 +270,10 @@ body {
     .profile-info img,
     .profile-info i {
         margin-top: 10px;
+    }
+
+    .menu-dropdown {
+        margin-top: 240px;
     }
 }
 

@@ -98,6 +98,11 @@
         </div>
     </div>
 
+    <!--Input de pesquisa mobile-->
+    <div class="col-md-12 d-md-none d-block mt-5 me-3 ms-3">
+        <input type="text" class="form-control" placeholder="Pesquise aqui">
+    </div>
+
     <!-- Navbar vertical -->
     <div class="nav-vertical">
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -116,10 +121,21 @@
                     </div>
                 </div>
                 <img src="./img/8c23a2b4-e8b4-4d0d-b0fb-df7a47a0a22d.jpeg" alt="Foto do Perfil">
-                <i class="fas fa-chevron-down ms-2" style="cursor: pointer;"></i>
+                <i onclick="toggleMenu()" class="fas fa-chevron-down ms-2" style="cursor: pointer;"></i>
             </div>
+
         </div>
     </div>
+
+    <!--Menu dropdown do perfil-->
+    <div class="profile-info ms-auto">
+        <div class="menu-dropdown" id="menuDropdown">
+            <a href="#"><i class="fas fa-th-large me-2"></i> Início</a>
+            <a class="borda-profile" href="#"><i class="fa-solid fa-user-pen me-2"></i> Perfil</a>
+            <button class="btn-sair btn-logout mt-2"><i class="fas fa-sign-out-alt me-2"></i> Sair</button>
+        </div>
+    </div>
+
 </body>
 
 <script src="./js/scripts.js"></script>
