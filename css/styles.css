@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Evita o scroll horizontal */
+    background-color: #F9F9F9;
 }
 
 .navbar-brand img {
@@ -15,7 +15,7 @@ body {
 
 .nav-link.active {
     background: rgb(19, 180, 238);
-    background: radial-gradient(circle, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
     color: white !important;
     border-radius: 10px;
 }
@@ -286,6 +286,133 @@ h3 {
 
 .carousel-indicators-oscar button.active {
     background-color: #007bff;
+}
+
+/*Qual conteudo*/
+.qual-conteudo {
+    padding: 20px;
+}
+
+.qual-conteudo h1 {
+    color: #3EBBEB;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.qual-conteudo p {
+    color: #8A8A8A;
+}
+
+/* Estilo dos botões de conteúdo */
+.conteudo-wrapper {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.conteudo {
+    flex: 0 0 auto;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.conteudo.active {
+    background: rgb(19, 180, 238);
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: white;
+}
+
+.conteudo img {
+    margin-right: 10px;
+    width: 24px;
+}
+
+.conteudo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra de rolagem personalizada */
+.conteudo-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.conteudo-wrapper::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    border-radius: 10px;
+}
+
+.conteudo-wrapper::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Textarea e barra de ferramentas */
+.text-editor {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-editor i {
+    margin-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    color: #8A8A8A;
+    font-size: 16px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.toolbar i {
+    font-size: 18px;
+    color: #3D4040;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.toolbar i:hover {
+    color: #00bfff;
+}
+
+.btn-criar-conteudo {
+    background: linear-gradient(90deg, rgba(209, 81, 83, 1) 0%, rgba(134, 46, 246, 1) 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all .3s ease;
+}
+
+.btn-criar-conteudo:hover {
+    transform: scale(1.1);
 }
 
 /* Estilos para mobile */
