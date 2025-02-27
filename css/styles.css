@@ -415,6 +415,46 @@ textarea {
     transform: scale(1.1);
 }
 
+/*Qual estrategia*/
+.qual-estrategia {
+    padding: 20px;
+}
+
+.qual-estrategia h1 {
+    color: #3EBBEB;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.qual-estrategia p {
+    color: #8A8A8A;
+}
+
+.qual-estrategia .card-estrategia {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.qual-estrategia .card-estrategia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-estrategia h3 {
+    font-size: 1rem;
+    color: #3D4040;
+    font-weight: bold;
+}
+
+.card-estrategia p {
+    font-size: 14px;
+}
+
 /* Estilos para mobile */
 @media (max-width: 768px) {
     .sidebar {
@@ -479,5 +519,22 @@ textarea {
 
     .carousel-container-oscar {
         padding: 0;
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-criar-conteudo {
+        width: 100%;
+    }
+
+    .qual-estrategia .card-estrategia {
+        height: 100%;
+    }
+
+    .qual-estrategia .col-md-6, .col-md-4 {
+        margin-bottom: 10px;
     }
 }
