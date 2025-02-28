@@ -43,13 +43,20 @@ function createIndicators() {
 function moveToSlide(index) {
     const itemsPerPage = window.innerWidth < 768 ? 1 : 3;
     const slideWidth = track.clientWidth / itemsPerPage;
+    const maxIndex = Math.ceil(document.querySelectorAll('.carousel-card-oscar').length / itemsPerPage) - 1;
+
+    if (index > maxIndex) index = maxIndex;
+
     track.style.transform = `translateX(-${index * slideWidth * itemsPerPage}px)`;
+
     const buttons = indicatorsContainer.querySelectorAll('button');
     buttons.forEach((btn, i) => {
         btn.classList.toggle('active', i === index);
     });
+
     currentIndex = index;
 }
+
 
 window.addEventListener('resize', () => {
     createIndicators();
