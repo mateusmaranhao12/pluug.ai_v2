@@ -27,6 +27,8 @@ body {
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar .nav-item {
@@ -64,10 +66,24 @@ body {
     display: block;
 }
 
+.sidebar::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
 /*Navbar*/
 .nav-vertical {
     margin-left: 250px;
-    padding: 20px;
+    padding: 3px 5px 2px 5px;
     background-color: #fff;
 }
 
@@ -94,6 +110,7 @@ body {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
+    font-size: 11px;
 }
 
 .progress-bar {
@@ -117,6 +134,7 @@ body {
     padding: 10px;
     display: none;
     z-index: 10;
+    margin-top: -30px;
 }
 
 /* Exibe o menu dropdown quando ativo */
@@ -440,7 +458,7 @@ h3 {
 .conteudo {
     flex: 0 0 auto;
     background-color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
