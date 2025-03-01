@@ -13,7 +13,18 @@ body {
     max-width: 220px;
 }
 
-.nav-link.active {
+body.index #navegacao a#index,
+body .perfil #navegacao a#perfil,
+body.trend-ai #navegacao a#trend-ai,
+body.creator-genie #navegacao a#creator-genie,
+body.creator-flow #navegacao a#creator-flow,
+body.meus-projetos #navegacao a#meus-projetos,
+body.validados #navegacao a#validados,
+body.plano #navegacao a#plano,
+body.suporte #navegacao a#suporte,
+body.configuracoes #navegacao a#configuracoes,
+body.comunidade #navegacao a#comunidade
+ {
     background: none;
     border: 1px solid rgba(19, 180, 238, 1);
     border-radius: 10px;
@@ -80,6 +91,8 @@ body {
 .sidebar::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
+
+
 
 /*Navbar*/
 .nav-vertical {
