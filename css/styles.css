@@ -261,8 +261,9 @@ h3 {
     border-radius: 20px;
     border: none;
     transition: background-color .3s ease;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    height: 30px;
 }
 
 .oscar .btn-youtube:hover {
@@ -272,13 +273,14 @@ h3 {
 .oscar .btn-visualizacoes {
     background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
     color: #fff;
-    padding: 8px;
+    padding: 5px;
     border-radius: 20px;
     border: none;
     transition: transform .3s ease;
     width: 80px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    height: 30px;
 }
 
 .oscar .btn-visualizacoes img {
@@ -293,14 +295,14 @@ h3 {
 .oscar .btn-like {
     background-color: #6751D1;
     color: #fff;
-    padding: 8px;
+    padding: 3px;
     border-radius: 20px;
     border: none;
     transition: background-color .3s ease;
     width: 80px;
-    /* Reduz a largura do botão */
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    height: 30px;
 }
 
 .oscar .btn-like img {
@@ -319,8 +321,9 @@ h3 {
     border-radius: 20px;
     border: none;
     transition: background-color .3s ease;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    height: 30px;
 }
 
 .oscar .btn-facebook:hover {
@@ -334,8 +337,9 @@ h3 {
     border-radius: 20px;
     border: none;
     transition: background-color .3s ease;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    height: 30px;
 }
 
 .oscar .btn-tiktok {
@@ -345,18 +349,20 @@ h3 {
 .oscar .btn-aproveitar-trends {
     background: linear-gradient(90deg, rgba(209, 81, 83, 1) 0%, rgba(134, 46, 246, 1) 100%);
     color: #fff;
-    padding: 8px;
+    padding: 3px;
     border-radius: 20px;
     border: none;
     transition: color .3s ease;
-    width: 200px;
-    font-size: 0.8rem;
+    width: 170px;
+    font-size: 0.7rem;
     font-weight: 500;
+    height: 30px;
 }
 
 .oscar .btn-aproveitar-trends .img-fluid {
     margin-right: 10px;
     margin-bottom: 3px;
+    height: 20px;
 }
 
 .oscar .btn-aproveitar-trends:hover {
@@ -825,6 +831,7 @@ textarea {
 
     .oscar .btn-aproveitar-trends {
         width: 100%;
+        font-size: 100%;
     }
 
     .toolbar-container {
