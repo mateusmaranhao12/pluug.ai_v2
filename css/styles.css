@@ -214,7 +214,7 @@ body {
 /*Conteudo principal*/
 .main-content {
     margin-left: 250px;
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
 /*Top trends*/
@@ -871,6 +871,10 @@ textarea {
 
     .oscar {
         width: 100%;
+    }
+
+    .input-pesquisa {
+        margin-bottom: 20px;
     }
 
     .d-flex.align-items-center.flex-wrap {
