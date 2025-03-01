@@ -14,7 +14,7 @@ body {
 }
 
 body.index #navegacao a#index,
-body .perfil #navegacao a#perfil,
+body.perfil #navegacao a#perfil,
 body.trend-ai #navegacao a#trend-ai,
 body.creator-genie #navegacao a#creator-genie,
 body.creator-flow #navegacao a#creator-flow,
