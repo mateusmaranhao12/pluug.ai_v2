@@ -26,6 +26,7 @@ body.configuracoes #navegacao a#configuracoes,
 body.comunidade #navegacao a#comunidade {
     background: none;
     border: 1px solid rgba(19, 180, 238, 1);
+    color: rgb(19, 180, 238);
     border-radius: 10px;
 }
 
@@ -878,6 +879,127 @@ textarea {
     color: #828282;
 }
 
+/*Modal Convidar*/
+.modal-content {
+    border-radius: 15px;
+    padding: 0px 20px 0px 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-tabs .nav-link {
+    font-weight: bold;
+    color: #6c757d;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+    color: #3EBBEB;
+    border-bottom: 2px solid #3EBBEB;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.modal-body h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.modal-body .quando-receberei {
+    background-color: #F9F5FE;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modal-body .quando-receberei h6 {
+    color: #6751D1;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modal-body p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.btn-convidar {
+    background-color: #fff;
+    color: #6751D1;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    transition: .3s ease;
+}
+
+.btn-convidar:hover {
+    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.btn-copiar, .btn-recolher {
+    background-color: #3EBBEB;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+}
+
+.btn-copiar:hover {
+    background-color: #2EA5D3;
+}
+
+.btn-recolher:hover {
+    background-color: #2EA5D3;
+}
+
+.info-importante-titulo {
+    font-weight: bold;
+    text-align: start !important;
+    color: #6c757d;
+}
+
+.info-importante {
+    font-size: 0.8rem;
+    text-align: start !important;
+    color: #6c757d;
+}
+
 /* Estilos para mobile */
 @media (max-width: 768px) {
     .sidebar {
@@ -1041,5 +1163,11 @@ textarea {
 
     .nav-vertical .search-bar {
         display: none;
+    }
+
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
     }
 }

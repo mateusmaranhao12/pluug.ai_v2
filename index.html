@@ -130,7 +130,7 @@
                     <div class="icon-wrapper me-3">
                         <img class="icones-roxos" src="./img/flowbite_bell-outline.png" alt="Notificação">
                     </div>
-                    <div class="icon-wrapper me-3">
+                    <div class="icon-wrapper me-3" data-bs-toggle="modal" data-bs-target="#giftModal">
                         <img class="icones-roxos" src="./img/tabler_gift.png" alt="Presente">
                     </div>
                 </div>
@@ -163,6 +163,50 @@
     <!--Conteudo principal-->
     <div class="main-content">
 
+        <!-- Modal -->
+        <div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab-convidar" onclick="showTab('convidar')">Convidar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab-recompensas"
+                                    onclick="showTab('recompensas')">Recompensas</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="convidar" class="tab-content active">
+                            <h5>Dê 10% de desconto e Ganhe até 20% de desconto na sua mensalidade</h5>
+                            <p>Convide amigos a novas contas para a Pluug AI e ofereça um desconto especial de 10%.</p>
+                            <button class="btn-convidar w-100"><img class="img-fluid me-2" src="./img/tabler_gift.png">
+                                Pluug.ai/convidado</button>
+                            <button class="btn-copiar mt-3">Copiar link de convite</button>
+                            <h6 class="mt-4 info-importante-titulo">Informações importantes</h6>
+                            <p class="info-importante mt-2">O desconto não é cumulativo e será aplicado apenas em 1
+                                única mensalidade.</p>
+                        </div>
+                        <div id="recompensas" class="tab-content">
+                            <h5 class="mb-3">Recompensas ganhas: 15%</h5>
+                            <div class="quando-receberei">
+                                <img class="img-fluid mb-3" src="./img/tabler_gift.png">
+                                <h6>Quando receberei minha recompensa?</h6>
+                                <p>A sua recompensa será o desconto aplicado na sua próxima mensalidade. O desconto não
+                                    é cumulativo, ele será aplicado apenas em 1 única mensalidade, até 30 dias após a
+                                    indicação.</p>
+                                <p>Caso seu plano seja anual, seu desconto será aplicado no ato da renovação</p>
+                            </div>
+                            <button class="btn-recolher mt-3">Recolher recompensa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!--Top trends-->
         <section class="top-trends">
             <div class="container">

@@ -22,47 +22,56 @@ window.onclick = function (event) {
 }
 
 //Carrossel
-const track = document.getElementById('carouselTrack');
-const indicatorsContainer = document.getElementById('carouselIndicators');
-let currentIndex = 0;
+const track = document.getElementById('carouselTrack')
+const indicatorsContainer = document.getElementById('carouselIndicators')
+let currentIndex = 0
 
 function createIndicators() {
-    const totalCards = document.querySelectorAll('.carousel-card-oscar').length;
-    const itemsPerPage = window.innerWidth < 768 ? 1 : 3;
-    const totalPages = Math.ceil(totalCards / itemsPerPage);
-    indicatorsContainer.innerHTML = '';
+    const totalCards = document.querySelectorAll('.carousel-card-oscar').length
+    const itemsPerPage = window.innerWidth < 768 ? 1 : 3
+    const totalPages = Math.ceil(totalCards / itemsPerPage)
+    indicatorsContainer.innerHTML = ''
 
     for (let i = 0; i < totalPages; i++) {
-        const button = document.createElement('button');
-        button.onclick = () => moveToSlide(i);
-        if (i === 0) button.classList.add('active');
-        indicatorsContainer.appendChild(button);
+        const button = document.createElement('button')
+        button.onclick = () => moveToSlide(i)
+        if (i === 0) button.classList.add('active')
+        indicatorsContainer.appendChild(button)
     }
 }
 
 function moveToSlide(index) {
-    const itemsPerPage = window.innerWidth < 768 ? 1 : 3;
-    const slideWidth = track.clientWidth / itemsPerPage;
-    const maxIndex = Math.ceil(document.querySelectorAll('.carousel-card-oscar').length / itemsPerPage) - 1;
+    const itemsPerPage = window.innerWidth < 768 ? 1 : 3
+    const slideWidth = track.clientWidth / itemsPerPage
+    const maxIndex = Math.ceil(document.querySelectorAll('.carousel-card-oscar').length / itemsPerPage) - 1
 
-    if (index > maxIndex) index = maxIndex;
+    if (index > maxIndex) index = maxIndex
 
-    track.style.transform = `translateX(-${index * slideWidth * itemsPerPage}px)`;
+    track.style.transform = `translateX(-${index * slideWidth * itemsPerPage}px)`
 
-    const buttons = indicatorsContainer.querySelectorAll('button');
+    const buttons = indicatorsContainer.querySelectorAll('button')
     buttons.forEach((btn, i) => {
-        btn.classList.toggle('active', i === index);
-    });
+        btn.classList.toggle('active', i === index)
+    })
 
-    currentIndex = index;
+    currentIndex = index
 }
 
 
 window.addEventListener('resize', () => {
-    createIndicators();
-    moveToSlide(currentIndex);
-});
+    createIndicators()
+    moveToSlide(currentIndex)
+})
 
 window.onload = () => {
-    createIndicators();
-};
+    createIndicators()
+}
+
+//modal recompensas e convidar
+function showTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'))
+    document.getElementById(tabId).classList.add('active')
+    
+    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'))
+    document.getElementById('tab-' + tabId).classList.add('active')
+}
