@@ -1359,6 +1359,14 @@ h3 {
     border-radius: 15px;
     padding: 0px 10px 0px 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.adicionar:hover {
+    background-color: #f0f0f0;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .adicionar h4 {
@@ -1380,6 +1388,105 @@ h3 {
     color: #A190B8;
     padding: 5px;
     cursor: pointer;
+}
+
+/*Modal arquivos*/
+.modal-arquivo-content {
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+    max-width: 800px;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+#modalArquivo .modal-body h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: start;
+}
+
+#modalArquivo .modal-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+}
+
+.adicionar-arquivo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adicionar-arquivo:hover {
+    background-color: #f8f9fa;
+}
+
+/*Modal instrucoes*/
+.modal-instrucoes-content {
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+    max-width: 800px;
+}
+
+.modal-instrucoes-header {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#modalInstrucoes .modal-body p {
+    text-align: start;
+    color: #555;
+}
+
+#modalInstrucoes .textarea-instrucoes {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+}
+
+.btn-cancelar {
+    background: none;
+    border: none;
+    color: #6c757d;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.btn-aplicar {
+    background: #6C4BF4;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    transition: .3s ease;
+}
+
+.btn-aplicar:hover {
+    background: #563AC8;
+}
+
+.btn-cancelar:hover {
+    transform: scale(1.1);
 }
 
 /* Estilos para mobile */

@@ -285,7 +285,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="adicionar d-flex align-items-center mb-2">
+                    <div class="adicionar d-flex align-items-center mt-2 mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalArquivo">
                         <img class="me-2" src="./img/material-symbols_add-ad-outline.png" alt="Adicionar">
                         <div class="mt-4">
                             <h4>Adicionar arquivo</h4>
@@ -294,12 +295,57 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="adicionar d-flex align-items-center mb-2">
+                    <div class="adicionar d-flex align-items-center mt-2 mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalInstrucoes">
                         <img class="me-2" src="./img/solar_pen-broken.png" alt="Adicionar">
                         <div class="mt-4">
                             <h4>Adicionar instruções</h4>
                             <p>Os Agentes poderão acessar as instruções para personalizar o conteúdo</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal arquivos -->
+        <div class="modal fade" id="modalArquivo" tabindex="-1" aria-labelledby="modalArquivoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-arquivo-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-2">Arquivos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <p>Adicione arquivos, imagens e muito mais para personalizar seus conteúdos</p>
+                        <div class="adicionar-arquivo">
+                            <img class="me-2" style="height: 25px;" src="./img/material-symbols_add-ad-outline.png"
+                                alt="Arquivo">
+                            <span>Adicionar arquivo</span>
+                            <i class="fa-solid fa-circle-plus ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Instruções -->
+        <div class="modal fade" id="modalInstrucoes" tabindex="-1" aria-labelledby="modalInstrucoesLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-instrucoes-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-2">Arquivos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <p>Oriente os Agentes a se concentrarem em determinados tópicos ou usar um determinado tom ou
+                            formato para as respostas.</p>
+                        <textarea class="textarea-instrucoes"
+                            placeholder="| Consulte os anexos, sempre use as características e ofertas do produto, conforme os anexos. Use linguagem de Copywriting"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end me-3 mb-3">
+                        <button type="button" class="btn-cancelar me-4" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn-aplicar">Aplicar</button>
                     </div>
                 </div>
             </div>
