@@ -839,7 +839,7 @@ textarea {
 }
 
 .btn-gradient {
-    background: linear-gradient(90deg, #D133FF, #FF3D77);
+    background: linear-gradient(90deg, #D15153, #862EF6);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -849,6 +849,7 @@ textarea {
 
 .btn-gradient:hover {
     background: linear-gradient(90deg, #C02FEA, #E63B6E);
+    color: #fff;
 }
 
 .botoes-container {
@@ -1002,6 +1003,11 @@ textarea {
 }
 
 /*Trend selecionada*/
+
+.trend-selecionada {
+    padding: 0px 20px 0px 20px;
+}
+
 .trend-selecionada h1 {
     color: #3EBBEB;
     font-weight: bold;
