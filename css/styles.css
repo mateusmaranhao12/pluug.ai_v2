@@ -508,6 +508,11 @@ h3 {
     color: #8A8A8A;
 }
 
+.qual-conteudo h6 {
+    color: #3D4040;
+    margin-bottom: 0;
+}
+
 /* Estilo dos botões de conteúdo */
 .conteudo-wrapper {
     display: flex;
