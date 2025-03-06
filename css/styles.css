@@ -676,6 +676,37 @@ textarea {
     margin-right: 15px;
 }
 
+.qual-estrategia .card-estrategia-2 {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 5px;
+    height: 100px;
+}
+
+.qual-estrategia .card-estrategia-2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-estrategia-2 h3 {
+    font-size: 1rem;
+    color: #3D4040;
+    font-weight: bold;
+}
+
+.card-estrategia-2 p {
+    font-size: 14px;
+}
+
+.card-estrategia-2 .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
 /*Meus conteudos*/
 .meus-conteudos {
     padding: 20px;
@@ -1026,7 +1057,7 @@ textarea {
 /*Oscar trend*/
 .oscar-trend {
     background-color: #fff;
-    background-image: url('../img/trend.png');
+    background-image: url('../img/trend 2.png');
     background-repeat: no-repeat;
     background-position: center;
     padding: 15px;
@@ -1036,6 +1067,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .oscar-trend p,
