@@ -67,7 +67,7 @@ window.onload = () => {
     createIndicators()
 }
 
-//modal recompensas e convidar
+//modals
 function showTab(tabId) {
     document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'))
     document.getElementById(tabId).classList.add('active')
@@ -75,3 +75,29 @@ function showTab(tabId) {
     document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'))
     document.getElementById('tab-' + tabId).classList.add('active')
 }
+
+function abrirModalPlanoAnual() {
+    document.getElementById("modalPlanoAnual").style.display = "flex";
+}
+
+function fecharModalPlanoAnual() {
+    document.getElementById("modalPlanoAnual").style.display = "none";
+}
+
+function abrirModalMetodoPagamento() {
+    document.getElementById("modalMetodoPagamento").style.display = "flex";
+}
+
+function fecharModalMetodoPagamento() {
+    document.getElementById("modalMetodoPagamento").style.display = "none";
+}
+
+// Fechar modal ao clicar fora do conteúdo
+window.onclick = function(event) {
+    if (event.target.id === "modalPlanoAnual") {
+        fecharModalPlanoAnual();
+    }
+    if (event.target.id === "modalMetodoPagamento") {
+        fecharModalMetodoPagamento();
+    }
+};
