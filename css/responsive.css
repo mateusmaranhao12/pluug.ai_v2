@@ -1,0 +1,198 @@
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .sidebar .nav-link {
+        font-size: 100%;
+    }
+
+    .sidebar .nav-link .icones {
+        height: 30px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        color: #17a2b8;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+    .nav-vertical {
+        margin-left: 0px;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .profile-details {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    .profile-info img,
+    .profile-info i {
+        margin-top: 10px;
+    }
+
+    .profile-info .d-flex.align-items-center {
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-left: 0px !important;
+        padding: 0px !important;
+    }
+
+    .top-trends {
+        text-align: center;
+    }
+
+    .carousel-card-oscar {
+        min-width: 100%;
+        padding: 0 20px;
+    }
+
+    .carousel-container-oscar {
+        padding: 0;
+    }
+
+    .oscar .btn-aproveitar-trends {
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .toolbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toolbar {
+        margin-top: 10px;
+        justify-content: flex-start;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .toolbar i {
+        flex: 1 1 10%;
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .btn-criar-conteudo {
+        width: 100%;
+    }
+
+    .qual-estrategia .card-estrategia {
+        height: 100%;
+    }
+
+    .card-estrategia p {
+        font-size: 100%;
+    }
+
+    .qual-estrategia .col-md-6,
+    .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    .oscar {
+        width: 100%;
+    }
+
+    .input-pesquisa {
+        margin-bottom: 20px;
+    }
+
+    .d-flex.align-items-center.flex-wrap {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .music-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .music-player {
+        width: 100%;
+        max-width: none;
+        margin-top: 10px;
+    }
+
+    .menu-dropdown {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5px;
+        width: 250px;
+    }
+
+    .menu-dropdown a {
+        text-align: center;
+    }
+
+    .dropdown-icon {
+        position: relative;
+    }
+
+    .menu-dropdown.active {
+        text-align: center;
+    }
+
+    .nav-vertical .search-bar {
+        display: none;
+    }
+
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .detalhes-planos-assinaturas .tabs {
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+    .creditos-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .creditos-container .btn-comprar {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .creditos-extras .creditos-container {
+        flex-wrap: wrap;
+        /* Permite quebra de linha apenas em telas menores */
+        justify-content: flex-start;
+    }
+
+    .creditos-extras .btn-comprar {
+        width: 100%;
+        text-align: center;
+    }
+}

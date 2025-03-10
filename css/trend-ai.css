@@ -1,0 +1,317 @@
+/*Trend selecionada*/
+
+.trend-selecionada {
+    padding: 0px 20px 0px 20px;
+}
+
+.trend-selecionada h1 {
+    color: #3EBBEB;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.trend-selecionada p {
+    color: #8A8A8A;
+}
+
+/*Oscar trend*/
+.oscar-trend {
+    background-color: #fff;
+    background-image: url('../img/trend 2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.oscar-trend p,
+h3 {
+    color: #3D4040;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.oscar-trend .btn-youtube {
+    background-color: #CE5059;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar-trend .btn-youtube:hover {
+    background-color: #9c252d;
+}
+
+.oscar-trend .btn-visualizacoes {
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    transition: transform .3s ease;
+    width: 80px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar-trend .btn-visualizacoes img {
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.oscar-trend .btn-visualizacoes:hover {
+    transform: scale(1.1);
+}
+
+.oscar-trend .btn-like {
+    background-color: #6751D1;
+    color: #fff;
+    padding: 3px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    width: 80px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar-trend .btn-like img {
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.oscar-trend .btn-like:hover {
+    background-color: #3b306e;
+}
+
+.oscar-trend .btn-facebook {
+    background-color: #386CAF;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar-trend .btn-facebook:hover {
+    background-color: #254877;
+}
+
+.oscar-trend .btn-tiktok {
+    background-color: #3D4040;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar-trend .btn-tiktok {
+    background-color: #242424;
+}
+
+.oscar-trend .btn-aproveitar-trends {
+    background: linear-gradient(90deg, rgba(209, 81, 83, 1) 0%, rgba(134, 46, 246, 1) 100%);
+    color: #fff;
+    padding: 3px;
+    border-radius: 20px;
+    border: none;
+    transition: color .3s ease;
+    width: 170px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar-trend .btn-aproveitar-trends .img-fluid {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+}
+
+.oscar-trend .btn-aproveitar-trends:hover {
+    color: rgb(84, 28, 158);
+}
+
+.oscar-trend .d-flex.align-items-center.flex-nowrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.oscar-trend .music-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.oscar-trend .music-player {
+    flex-shrink: 1;
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.oscar-trend .player-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.oscar-trend .progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.oscar-trend .progress {
+    width: 50%;
+    height: 100%;
+    background-color: #3EBBEB;
+    border-radius: 2px;
+}
+
+.oscar-trend .controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.oscar-trend .controls img {
+    height: 25px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.oscar-trend .controls img:hover {
+    transform: scale(1.1);
+}
+
+/*Conteudo gerado*/
+.conteudo-gerado {
+    padding: 10px;
+    background-color: #E8F8E7;
+    border-radius: 10px;
+}
+
+.btn-conteudo-gerado {
+    background-color: #14A148;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 3px 30px 3px 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.conteudo-gerado p {
+    color: #8A8A8A;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.conteudo-texto {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.conteudo-texto p {
+    color: #3D4040;
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Text editor trend*/
+.text-editor-trend {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Contêiner do botão e da toolbar */
+.text-editor-trend .toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo da toolbar */
+.text-editor-trend .toolbar {
+    display: flex;
+    gap: 10px;
+}
+
+.text-editor-trend .toolbar i {
+    font-size: 18px;
+    color: #3D4040;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-right: 10px;
+}
+
+.text-editor-trend .toolbar i:hover {
+    color: #00bfff;
+}
+
+.btn-validar-conteudo {
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: transform .3s ease;
+    font-weight: 500;
+}
+
+.btn-validar-conteudo:hover {
+    transform: scale(1.1);
+}
+
+.btn-ajustar-conteudo {
+    background-color: #6751D1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: transform .3s ease;
+    font-weight: 500;
+}
+
+.btn-ajustar-conteudo:hover {
+    transform: scale(1.1);
+}
