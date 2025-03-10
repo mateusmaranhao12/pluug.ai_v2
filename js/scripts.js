@@ -71,7 +71,7 @@ window.onload = () => {
 function showTab(tabId) {
     document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'))
     document.getElementById(tabId).classList.add('active')
-    
+
     document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'))
     document.getElementById('tab-' + tabId).classList.add('active')
 }
@@ -92,12 +92,36 @@ function fecharModalMetodoPagamento() {
     document.getElementById("modalMetodoPagamento").style.display = "none";
 }
 
+function abrirModalAlterarEmail() {
+    let modal = document.getElementById("modalAlterarEmail");
+    modal.classList.add("ativo");
+}
+
+function fecharModalAlterarEmail() {
+    let modal = document.getElementById("modalAlterarEmail");
+    modal.classList.remove("ativo");
+}
+
 // Fechar modal ao clicar fora do conteúdo
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target.id === "modalPlanoAnual") {
         fecharModalPlanoAnual();
     }
     if (event.target.id === "modalMetodoPagamento") {
         fecharModalMetodoPagamento();
     }
+    if (event.target.id === "modalAlterarEmail") {
+        fecharModalAlterarEmail();
+    }
 };
+
+//trocar aba em planos e assinatura
+function trocarAba(aba) {
+    // Remove a classe "ativo" de todas as abas e botões
+    document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("ativo"));
+    document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+
+    // Adiciona a classe "ativo" para a aba correspondente e para o botão
+    document.getElementById(aba).classList.add("ativo");
+    document.querySelector(`button[onclick="trocarAba('${aba}')"]`).classList.add("active");
+}

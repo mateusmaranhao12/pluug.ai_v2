@@ -218,105 +218,161 @@
                 <h1 class="titulo">Detalhes Planos e Assinatura</h1>
 
                 <div class="tabs">
-                    <button class="active">Plano e Assinatura</button>
-                    <button>Faturas e cobrança</button>
-                    <button>Dados de Cobrança</button>
+                    <button onclick="trocarAba('plano-assinatura')" class="tab-btn active">Plano e Assinatura</button>
+                    <button onclick="trocarAba('faturas-cobranca')" class="tab-btn">Faturas e cobrança</button>
+                    <button onclick="trocarAba('dados-cobranca')" class="tab-btn">Dados de Cobrança</button>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="box-plan">
-                            <p class="title mt-3">Plano</p>
-                            <p class="info">Starter | <span class="link">Mudar plano</span></p>
+                <div id="plano-assinatura" class="tab-content ativo">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-plan">
+                                <p class="title mt-3">Plano</p>
+                                <p class="info">Starter | <span class="link">Mudar plano</span></p>
 
-                            <p class="title">Licenças compradas</p>
-                            <p class="info">3</p>
+                                <p class="title">Licenças compradas</p>
+                                <p class="info">3</p>
 
-                            <p class="title">Licenças alocadas</p>
-                            <p class="info">3</p>
+                                <p class="title">Licenças alocadas</p>
+                                <p class="info">3</p>
 
-                            <p class="title">Data da expiração</p>
-                            <p class="info">4 de março de 2025</p>
+                                <p class="title">Data da expiração</p>
+                                <p class="info">4 de março de 2025</p>
 
-                            <p class="title">Período de cobrança</p>
-                            <p class="info">Mensal |
-                                <span class="link" onclick="abrirModalPlanoAnual()">Mude para o plano anual</span>
-                                <span class="tag">ECONOMIZE 20%</span>
-                            </p>
+                                <p class="title">Período de cobrança</p>
+                                <p class="info">Mensal |
+                                    <span class="link" onclick="abrirModalPlanoAnual()">Mude para o plano anual</span>
+                                    <span class="tag">ECONOMIZE 20%</span>
+                                </p>
+
+                            </div>
+
+                            <div class="box-comprar-creditos mt-4">
+                                <h3>Comprar créditos extras Automático</h3>
+                                <div class="creditos-container">
+                                    <div class="creditos-item">
+                                        <label>Status</label>
+                                        <select>
+                                            <option>Não Habilitado</option>
+                                            <option>Habilitado</option>
+                                        </select>
+                                    </div>
+                                    <div class="creditos-item">
+                                        <label>Ao atingir</label>
+                                        <select>
+                                            <option>100 créditos</option>
+                                            <option>200 créditos</option>
+                                            <option>500 créditos</option>
+                                        </select>
+                                    </div>
+                                    <div class="creditos-item">
+                                        <label>Comprar</label>
+                                        <input type="text" value="1000 créditos">
+                                    </div>
+                                    <div class="creditos-item">
+                                        <button class="btn-comprar">Comprar agora</button>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+                        <div class="col-md-6">
+                            <!-- Caixa de Créditos IA -->
+                            <div class="box-credito">
+                                <h3>Créditos IA</h3>
+                                <p>Cada ação realizada com a criação de conteúdo ou estratégia equivale a um crédito. Os
+                                    créditos serão renovados em 4 de março de 2025. Acompanhe e Gerencie seus créditos.
+                                </p>
+                                <p class="creditos-restantes">25 créditos restantes</p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 50%"></div>
+                                </div>
+                            </div>
 
-                        <div class="box-comprar-creditos mt-4">
-                            <h3>Comprar créditos extras Automático</h3>
-                            <div class="creditos-container">
-                                <div class="creditos-item">
-                                    <label>Status</label>
-                                    <select>
-                                        <option>Não Habilitado</option>
-                                        <option>Habilitado</option>
-                                    </select>
-                                </div>
-                                <div class="creditos-item">
-                                    <label>Ao atingir</label>
-                                    <select>
-                                        <option>100 créditos</option>
-                                        <option>200 créditos</option>
-                                        <option>500 créditos</option>
-                                    </select>
-                                </div>
-                                <div class="creditos-item">
-                                    <label>Comprar</label>
-                                    <input type="text" value="1000 créditos">
-                                </div>
-                                <div class="creditos-item">
+                            <!-- Caixa de Ações de Cobrança -->
+                            <div class="box-cobranca mt-4 mb-4">
+                                <h3>Ações de cobrança</h3>
+                                <ul>
+                                    <li><strong>As cobranças futuras serão debitadas no cartão ****324</strong>
+                                        <span class="alterar-link" onclick="abrirModalMetodoPagamento()">Alterar método
+                                            de
+                                            pagamento</span>
+                                    </li>
+                                    <li><strong>E-mails de cobrança são enviados para diana@gmail.com</strong>
+                                        <span class="alterar-link" onclick="abrirModalAlterarEmail()">Alterar
+                                            E-mail</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="creditos-extras">
+                                <h3>Comprar créditos extras</h3>
+                                <div class="creditos-container">
+                                    <div class="creditos-item">
+                                        <label>Quantidade de créditos</label>
+                                        <select>
+                                            <option>10.000 - R$ 120,00</option>
+                                            <option>20.000 - R$ 200,00</option>
+                                            <option>50.000 - R$ 450,00</option>
+                                        </select>
+                                    </div>
                                     <button class="btn-comprar">Comprar agora</button>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
-                    <div class="col-md-6">
-                        <!-- Caixa de Créditos IA -->
-                        <div class="box-credito">
-                            <h3>Créditos IA</h3>
-                            <p>Cada ação realizada com a criação de conteúdo ou estratégia equivale a um crédito. Os
-                                créditos serão renovados em 4 de março de 2025. Acompanhe e Gerencie seus créditos.</p>
-                            <p class="creditos-restantes">25 créditos restantes</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
+                </div>
 
-                        <!-- Caixa de Ações de Cobrança -->
-                        <div class="box-cobranca mt-4 mb-4">
-                            <h3>Ações de cobrança</h3>
-                            <ul>
-                                <li><strong>As cobranças futuras serão debitadas no cartão ****324</strong>
-                                    <span class="alterar-link" onclick="abrirModalMetodoPagamento()">Alterar método de
-                                        pagamento</span>
-                                </li>
-                                <li><strong>E-mails de cobrança são enviados para diana@gmail.com</strong>
-                                    <span class="alterar-link">Alterar E-mail</span>
-                                </li>
-                            </ul>
+                <div id="faturas-cobranca" class="tab-content">
+                    <div class="box-faturas">
+                        <!-- Scroll horizontal em telas menores -->
+                        <div class="table-responsive">
+                            <table class="tabela-faturas">
+                                <thead>
+                                    <tr>
+                                        <th>Data de emissão</th>
+                                        <th>Pagamento</th>
+                                        <th>Preço</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>4 de março 2025</td>
+                                        <td>Cartão *72164</td>
+                                        <td>R$ 23,90</td>
+                                        <td class="status-pago">Pago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 de março 2025</td>
+                                        <td>Cartão *72164</td>
+                                        <td>R$ 23,90</td>
+                                        <td class="status-pago">Pago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 de março 2025</td>
+                                        <td>Cartão *72164</td>
+                                        <td>R$ 23,90</td>
+                                        <td class="status-pago">Pago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 de março 2025</td>
+                                        <td>Cartão *72164</td>
+                                        <td>R$ 23,90</td>
+                                        <td class="status-pago">Pago</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-
-                        <div class="creditos-extras">
-                            <h3>Comprar créditos extras</h3>
-                            <div class="creditos-container">
-                                <div class="creditos-item">
-                                    <label>Quantidade de créditos</label>
-                                    <select>
-                                        <option>10.000 - R$ 120,00</option>
-                                        <option>20.000 - R$ 200,00</option>
-                                        <option>50.000 - R$ 450,00</option>
-                                    </select>
-                                </div>
-                                <button class="btn-comprar">Comprar agora</button>
-                            </div>
-                        </div>
-
                     </div>
+                </div>
 
+                <div id="dados-cobranca" class="tab-content">
+                    <div class="box-dados">
+                        <h3>Dados de Cobrança</h3>
+                        <p>Informações sobre seu método de pagamento.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -425,6 +481,24 @@
 
                 <div class="modal-footer-metodo-pagamento">
                     <button class="btn-trocar-cartao">Trocar cartão</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalAlterarEmail" class="modal-alterar-email">
+            <div class="modal-content-alterar-email">
+                <div class="modal-header-alterar-email">
+                    <h2 class="modal-title-alterar-email">Troque seu e-mail</h2>
+                    <i class="fas fa-times close-modal-alterar-email" onclick="fecharModalAlterarEmail()"></i>
+                </div>
+
+                <div class="modal-body-alterar-email">
+                    <label for="emailInput">E-mail</label>
+                    <input type="email" id="emailInput" value="rogerioaugusto@gmail.com">
+                </div>
+
+                <div class="modal-footer-alterar-email">
+                    <button class="btn-alterar-email">Trocar e-mail</button>
                 </div>
             </div>
         </div>
