@@ -723,3 +723,73 @@
     font-weight: bold;
     color: #333;
 }
+
+/*Dados de cobranca*/
+#dados-cobranca .box-dados {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Título */
+#dados-cobranca .box-dados h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos inputs */
+#dados-cobranca .box-dados label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #8a8a8a;
+    margin-bottom: 5px;
+}
+
+#dados-cobranca .box-dados input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+/* Estilização do campo de idioma */
+#dados-cobranca .input-icone {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+#dados-cobranca .input-icone img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Botão de salvar */
+#dados-cobranca .salvar-alteracoes {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#dados-cobranca .btn-salvar {
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#dados-cobranca .btn-salvar:hover {
+    opacity: 0.8;
+}
