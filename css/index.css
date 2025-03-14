@@ -353,8 +353,56 @@ h3 {
     height: 30px;
 }
 
-.oscar .btn-tiktok {
+.oscar .btn-tiktok:hover {
     background-color: #242424;
+}
+
+.oscar .btn-google {
+    background-color: #319F43;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar .btn-google:hover {
+    background-color: #1e682a;
+}
+
+.oscar .btn-x {
+    background-color: #1490A1;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar .btn-x:hover {
+    background-color: #0f5d68;
+}
+
+.oscar .btn-instagram {
+    background-color: #C5630E;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color .3s ease;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 30px;
+}
+
+.oscar .btn-instagram:hover {
+    background-color: #6e3400;
 }
 
 .oscar .btn-aproveitar-trends {
