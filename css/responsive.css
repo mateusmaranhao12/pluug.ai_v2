@@ -191,6 +191,10 @@
         justify-content: flex-start;
     }
 
+    .creditos-extras .creditos-item select {
+        width: 100%;
+    }
+
     .creditos-extras .btn-comprar {
         width: 100%;
         text-align: center;
@@ -206,5 +210,20 @@
 
     #dados-cobranca .btn-salvar {
         width: 100%;
+    }
+}
+
+@media(max-width: 1366px) {
+    .creditos-extras .creditos-item select {
+        width: 100%;
+    }
+
+    .creditos-extras .btn-comprar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .creditos-container {
+        flex-direction: column;
     }
 }

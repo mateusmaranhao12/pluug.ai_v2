@@ -27,13 +27,13 @@
     background: transparent;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
     white-space: nowrap;
 }
 
 .detalhes-planos-assinaturas .tabs button.active {
     border-bottom: 3px solid #3EBBEB;
     color: #000;
+    font-weight: bold;
 }
 
 /* Conteúdo das abas */
@@ -65,8 +65,10 @@
 .detalhes-planos-assinaturas .box-plan .info {
     color: #000;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
 /* Links clicáveis */
@@ -108,14 +110,14 @@
 .detalhes-planos-assinaturas .box-credito .creditos-restantes {
     font-size: 16px;
     font-weight: bold;
-    color: #3EBBEB;
+    color: #6751D1;
 }
 
 /* Barra de Progresso */
 .detalhes-planos-assinaturas .progress-bar {
     width: 100%;
     height: 5px;
-    background: #e0e0e0;
+    background: #e0f7ff;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -141,19 +143,19 @@
 }
 
 .detalhes-planos-assinaturas .box-cobranca ul {
-    list-style: none;
-    padding-left: 0;
+    padding-left: 20px;
 }
 
 .detalhes-planos-assinaturas .box-cobranca li {
     font-size: 14px;
     color: #333;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .detalhes-planos-assinaturas .box-cobranca .alterar-link {
     color: #3EBBEB;
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
     display: block;
     margin-top: 5px;
@@ -249,9 +251,9 @@
 /* Container Flexível */
 .creditos-extras .creditos-container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    gap: 15px;
+    gap: 8px;
     flex-wrap: nowrap;
     /* Não permite quebra de linha */
 }
@@ -267,7 +269,7 @@
 .creditos-extras .creditos-item label {
     font-size: 0.9rem;
     color: #8a8a8a;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
@@ -277,21 +279,21 @@
     border-radius: 10px;
     padding: 8px 12px;
     font-size: 0.9rem;
-    width: 100%;
+    width: 300px;
 }
 
 /* Botão de Comprar */
 .creditos-extras .btn-comprar {
     background-color: #6751D1;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border: none;
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s;
     white-space: nowrap;
-    /* Mantém o texto do botão em uma linha */
+    width: 280px;
 }
 
 .creditos-extras .btn-comprar:hover {
