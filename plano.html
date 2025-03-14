@@ -229,7 +229,8 @@
                         <div class="col-md-7">
                             <div class="box-plan">
                                 <p class="title mt-3">Plano</p>
-                                <p class="info">Starter | <span class="link">Mudar plano</span></p>
+                                <p onclick="abrirModalResumoPedido()" class="info">Starter | <span class="link">Mudar
+                                        plano</span></p>
 
                                 <p class="title">Licenças compradas</p>
                                 <p class="info">3</p>
@@ -577,6 +578,49 @@
 
                 <div class="modal-footer-alterar-email">
                     <button class="btn-alterar-email">Trocar e-mail</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalResumoPedido" class="modal-resumo-pedido">
+            <div class="modal-content-resumo-pedido">
+                <div class="modal-header-resumo-pedido">
+                    <h2 class="modal-title-resumo-pedido">Resumo do pedido</h2>
+                    <i class="fas fa-times close-modal-resumo-pedido" onclick="fecharModalResumoPedido()"></i>
+                </div>
+
+                <div class="modal-body-resumo-pedido">
+                    <div class="pedido-info">
+                        <div>
+                            <label style="color: #C2C2C2;">Pedido</label>
+                            <p>Plano anual</p>
+                        </div>
+                        <p class="preco">R$ 290,01</p>
+                    </div>
+
+                    <div class="pedido-total">
+                        <div>
+                            <label>Total</label>
+                        </div>
+                        <p class="preco">R$ 290,01</p>
+                    </div>
+
+                    <div class="cartao-info">
+                        <div class="cartao-label-container">
+                            <label>Cartão cadastrado</label>
+                            <span class="trocar-cartao-resumo-pedido" onclick="abrirModalMetodoPagamento()">Trocar de
+                                cartão</span>
+                        </div>
+                        <div class="cartao-container-resumo-pedido">
+                            <input type="text" value="2342.2353.532.536" readonly>
+                            <img src="./img/mastercard.png" alt="Cartão">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer-resumo-pedido">
+                    <button class="btn-cancelar-resumo-pedido" onclick="fecharModalResumoPedido()">Cancelar</button>
+                    <button class="btn-confirmar-resumo-pedido">Confirmar compra</button>
                 </div>
             </div>
         </div>

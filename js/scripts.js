@@ -102,6 +102,17 @@ function fecharModalAlterarEmail() {
     modal.classList.remove("ativo");
 }
 
+function abrirModalResumoPedido() {
+    let modal = document.getElementById("modalResumoPedido");
+    modal.classList.add("ativo");
+}
+
+function fecharModalResumoPedido() {
+    let modal = document.getElementById("modalResumoPedido");
+    modal.classList.remove("ativo");
+}
+
+
 // Fechar modal ao clicar fora do conteúdo
 window.onclick = function (event) {
     if (event.target.id === "modalPlanoAnual") {
@@ -112,6 +123,9 @@ window.onclick = function (event) {
     }
     if (event.target.id === "modalAlterarEmail") {
         fecharModalAlterarEmail();
+    }
+    if (event.target.id === "modalResumoPedido") {
+        fecharModalResumoPedido();
     }
 };
 
