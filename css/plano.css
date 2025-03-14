@@ -278,7 +278,7 @@
     border-radius: 10px;
     padding: 8px 12px;
     font-size: 0.9rem;
-    width: 300px;
+    width: 260px;
 }
 
 /* Botão de Comprar */
@@ -292,7 +292,7 @@
     cursor: pointer;
     transition: transform 0.2s;
     white-space: nowrap;
-    width: 280px;
+    width: 220px;
 }
 
 .creditos-extras .btn-comprar:hover {

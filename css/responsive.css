@@ -214,8 +214,8 @@
 }
 
 @media(max-width: 1366px) {
-    .creditos-extras .creditos-item select {
-        width: 100%;
+    .creditos-extras .creditos-item {
+        width: 100% !important;
     }
 
     .creditos-extras .btn-comprar {
