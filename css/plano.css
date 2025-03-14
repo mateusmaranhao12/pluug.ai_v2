@@ -327,13 +327,13 @@
 /* Título do modal */
 #modalPlanoAnual .modal-title-plano-anual {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 /* Corpo do modal */
 #modalPlanoAnual .modal-body-plano-anual label {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     color: #8a8a8a;
     display: block;
@@ -342,9 +342,11 @@
 
 #modalPlanoAnual .modal-body-plano-anual .info-text {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     color: #333;
     margin-bottom: 10px;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 5px;
 }
 
 /* Tag de economia */
@@ -352,7 +354,7 @@
     background: #6751D1;
     color: white;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 5px 10px;
     border-radius: 20px;
     display: inline-block;
@@ -383,7 +385,7 @@
 #modalPlanoAnual .cartao-container-plano-anual input {
     border: none;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     flex-grow: 1;
     text-align: left;
     background: none;
@@ -397,7 +399,7 @@
 /* Link de troca de cartão */
 #modalPlanoAnual .trocar-cartao-plano-anual {
     color: #3EBBEB;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
     font-size: 14px;
 }
@@ -405,7 +407,7 @@
 /* Rodapé do modal */
 #modalPlanoAnual .modal-footer-plano-anual {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     margin-top: 25px;
 }
 
@@ -415,7 +417,7 @@
     color: #333;
     padding: 10px 15px;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
     border: none;
 }
@@ -426,7 +428,7 @@
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
     border: none;
 }
