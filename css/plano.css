@@ -57,7 +57,7 @@
 .detalhes-planos-assinaturas .box-plan .title {
     color: #a0a0a0;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 2px;
 }
 
@@ -327,13 +327,13 @@
 /* Título do modal */
 #modalPlanoAnual .modal-title-plano-anual {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 /* Corpo do modal */
 #modalPlanoAnual .modal-body-plano-anual label {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     color: #8a8a8a;
     display: block;
@@ -342,7 +342,7 @@
 
 #modalPlanoAnual .modal-body-plano-anual .info-text {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     color: #333;
     margin-bottom: 10px;
     border-bottom: 1px solid #d6d6d6;
@@ -354,7 +354,7 @@
     background: #6751D1;
     color: white;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 5px 10px;
     border-radius: 20px;
     display: inline-block;
@@ -385,7 +385,7 @@
 #modalPlanoAnual .cartao-container-plano-anual input {
     border: none;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     flex-grow: 1;
     text-align: left;
     background: none;
@@ -399,7 +399,7 @@
 /* Link de troca de cartão */
 #modalPlanoAnual .trocar-cartao-plano-anual {
     color: #3EBBEB;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     font-size: 14px;
 }
@@ -417,7 +417,7 @@
     color: #333;
     padding: 10px 15px;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     border: none;
 }
@@ -428,7 +428,7 @@
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     border: none;
 }
@@ -741,14 +741,14 @@
 #modalResumoPedido .pedido-info label,
 #modalResumoPedido .pedido-total label {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     color: #8a8a8a;
 }
 
 #modalResumoPedido .pedido-info p,
 #modalResumoPedido .pedido-total p {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     color: #333;
 }
 
@@ -771,7 +771,7 @@
 
 #modalResumoPedido .cartao-label-container label {
     color: #C2C2C2;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #modalResumoPedido .trocar-cartao-resumo-pedido {
@@ -879,7 +879,7 @@
 .tabela-faturas th {
     text-align: left;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     color: #8a8a8a;
 }
@@ -889,11 +889,8 @@
     padding: 10px;
     font-size: 14px;
     border-bottom: 1px solid #eee;
-}
-
-.tabela-faturas td {
     color: #3D4040;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Status pago */
