@@ -157,7 +157,7 @@
 }
 
 .btn-aplicar {
-    background: #6C4BF4;
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -167,7 +167,7 @@
 }
 
 .btn-aplicar:hover {
-    background: #563AC8;
+    transform: scale(1.1);
 }
 
 .btn-cancelar:hover {
