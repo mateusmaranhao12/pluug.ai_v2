@@ -52,6 +52,12 @@
     padding: 40px 0;
 }
 
+.tutorial h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .card-tutorial {
     background: #fff;
     padding: 20px;
@@ -86,8 +92,7 @@
 
 /* Imagem principal */
 .sugerir-melhoria .imagem-principal {
-    border-radius: 12px;
-    width: 100%;
+    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -152,5 +157,9 @@
     .sugerir-melhoria .card-feedback,
     .sugerir-melhoria .card-sugestao {
         width: 100%;
+    }
+
+    .tutorial h2 {
+        font-size: 100%;
     }
 }
