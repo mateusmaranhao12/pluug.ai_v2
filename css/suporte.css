@@ -121,7 +121,7 @@
 
 /* Botão de Enviar */
 .sugerir-melhoria .btn-enviar {
-    background: linear-gradient(90deg, #007bff, #00c6ff);
+    background: #3EBBEB;
     color: white;
     padding: 12px 25px;
     border: none;
