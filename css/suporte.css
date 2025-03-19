@@ -53,9 +53,10 @@
 }
 
 .tutorial h2 {
-    font-size: 32px;
-    text-align: center;
+    color: #3EBBEB;
     font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .card-tutorial {
@@ -112,6 +113,11 @@
     color: black;
     font-weight: bold;
     margin-top: 30px;
+}
+
+.sugerir-melhoria .card-feedback p,
+.sugerir-melhoria .card-sugestao p {
+    color: #8A8A8A;
 }
 
 /* Campos de input */
