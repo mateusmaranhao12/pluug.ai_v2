@@ -232,30 +232,96 @@
                     <div class="col-md-12">
                         <h2>Central de ajuda</h2>
                     </div>
-                    <div class="col-md-5 card-tutorial">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-5 card-tutorial" onclick="abrirModalTutorial('tutorialAgentes')">
                         <div class="d-flex justify-content-center">
-                            <img class="img-fluid" src="./img/Icons menu/Central dos Agentes.png">
+                            <img class="img-fluid" src="./img/Icons menu/Central dos Agentes.png" />
                         </div>
                         <h5 class="card-titulo">Tutorial Central dos Agentes</h5>
                     </div>
-                    <div class="col-md-5 card-tutorial">
+
+                    <!-- Card 2 -->
+                    <div class="col-md-5 card-tutorial" onclick="abrirModalTutorial('tutorialTrend')">
                         <div class="d-flex justify-content-center">
-                            <img class="img-fluid" src="./img/Icons menu/Trend AI.png">
+                            <img class="img-fluid" src="./img/Icons menu/Trend AI.png" />
                         </div>
                         <h5 class="card-titulo">Tutorial Trend AI</h5>
                     </div>
-                    <div class="col-md-5 card-tutorial">
+
+                    <!-- Card 3 -->
+                    <div class="col-md-5 card-tutorial" onclick="abrirModalTutorial('tutorialFlow')">
                         <div class="d-flex justify-content-center">
-                            <img class="img-fluid" src="./img/Icons menu/Creator Flow.png">
+                            <img class="img-fluid" src="./img/Icons menu/Creator Flow.png" />
                         </div>
                         <h5 class="card-titulo">Tutorial Creator Flow</h5>
                     </div>
-                    <div class="col-md-5 card-tutorial">
+
+                    <!-- Card 4 -->
+                    <div class="col-md-5 card-tutorial" onclick="abrirModalTutorial('tutorialGenie')">
                         <div class="d-flex justify-content-center">
-                            <img class="img-fluid" src="./img/Icons menu/Creator Genie.png">
+                            <img class="img-fluid" src="./img/Icons menu/Creator Genie.png" />
                         </div>
                         <h5 class="card-titulo">Tutorial Creator Genie</h5>
                     </div>
+                </div>
+            </div>
+
+            <!-- Modal base (replicado para cada tutorial) -->
+            <div id="tutorialAgentes" class="modal-tutorial"
+                onclick="fecharModalTutorialPorFora(event, 'tutorialAgentes')">
+                <div class="modal-tutorial-content" onclick="event.stopPropagation()">
+                    <div class="modal-tutorial-title">
+                        <img src="./img/Icons menu/Central dos Agentes.png" width="30" />
+                        <h4>Tutorial Central dos Agentes</h4>
+                    </div>
+
+                    <div class="tutorial-video-placeholder">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <button onclick="fecharModalTutorial('tutorialAgentes')" class="btn-fechar-tutorial">Fechar</button>
+                </div>
+            </div>
+
+            <div id="tutorialTrend" class="modal-tutorial" onclick="fecharModalTutorialPorFora(event, 'tutorialTrend')">
+                <div class="modal-tutorial-content" onclick="event.stopPropagation()">
+                    <div class="modal-tutorial-title">
+                        <img src="./img/Icons menu/Trend AI.png" width="30" />
+                        <h4>Tutorial Trend AI</h4>
+                    </div>
+
+                    <div class="tutorial-video-placeholder">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <button onclick="fecharModalTutorial('tutorialTrend')" class="btn-fechar-tutorial">Fechar</button>
+                </div>
+            </div>
+
+            <div id="tutorialFlow" class="modal-tutorial" onclick="fecharModalTutorialPorFora(event, 'tutorialFlow')">
+                <div class="modal-tutorial-content" onclick="event.stopPropagation()">
+                    <div class="modal-tutorial-title">
+                        <img src="./img/Icons menu/Creator Flow.png" width="30" />
+                        <h4>Tutorial Creator Flow</h4>
+                    </div>
+
+                    <div class="tutorial-video-placeholder">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <button onclick="fecharModalTutorial('tutorialFlow')" class="btn-fechar-tutorial">Fechar</button>
+                </div>
+            </div>
+
+            <div id="tutorialGenie" class="modal-tutorial" onclick="fecharModalTutorialPorFora(event, 'tutorialGenie')">
+                <div class="modal-tutorial-content" onclick="event.stopPropagation()">
+                    <div class="modal-tutorial-title">
+                        <img src="./img/Icons menu/Creator Genie.png" width="30" />
+                        <h4>Tutorial Creator Genie</h4>
+                    </div>
+
+                    <div class="tutorial-video-placeholder">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <button onclick="fecharModalTutorial('tutorialGenie')" class="btn-fechar-tutorial">Fechar</button>
                 </div>
             </div>
         </section>

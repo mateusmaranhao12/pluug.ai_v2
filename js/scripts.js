@@ -139,3 +139,19 @@ function trocarAba(aba) {
     document.getElementById(aba).classList.add("ativo");
     document.querySelector(`button[onclick="trocarAba('${aba}')"]`).classList.add("active");
 }
+
+//modal tutorial
+function abrirModalTutorial(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+
+function fecharModalTutorial(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function fecharModalTutorialPorFora(event, id) {
+    const modalContent = document.querySelector(`#${id} .modal-tutorial-content`);
+    if (!modalContent.contains(event.target)) {
+        fecharModalTutorial(id);
+    }
+}
