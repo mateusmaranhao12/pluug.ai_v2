@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluug-ai - Leads IA</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/icone - 10.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap JS (com Popper incluído no bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/meus-projetos.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/plano.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/trend-ai.css">
+    <link rel="stylesheet" href="css/suporte.css">
+    <link rel="stylesheet" href="css/leads-ia.css">
+
+</head>
+
+<body class="leads-ia">
+    <!--SideBar-->
+    <nav class="navbar navbar-light d-md-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/pluugai-degrade-azul-fundo-branco-300-dpi.webp" alt="Pluu.ai Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse mobile-menu d-md-block" id="mobileMenu">
+        <div class="sidebar">
+            <a class="navbar-brand d-none d-md-block" href="#">
+                <img src="./img/pluugai-degrade-azul-fundo-branco-300-dpi.webp" alt="Pluu.ai Logo" class="img-fluid">
+            </a>
+            <ul id="navegacao" class="nav flex-column">
+                <li class="nav-item">
+                    <a id="index" class="nav-link" href="index.html"><img class="img-fluid icones"
+                            src="./img/Icons menu/Inicio.png">
+                        Início</a>
+                </li>
+                <li class="nav-item">
+                    <a id="perfil" class="nav-link" href="perfil.html"><img class="img-fluid icones"
+                            src="./img/Icons menu/Perfil.png">
+                        Perfil</a>
+                </li>
+                <li class="nav-item central-agentes-item">
+                    <a class="nav-link central-agentes-link" style="cursor: pointer;">
+                        <img class="img-fluid icones" src="./img/Icons menu/Central dos Agentes.png"> Central dos
+                        Agentes
+                        <i class="fas fa-chevron-down ms-auto"></i>
+                    </a>
+                    <ul class="submenu nav flex-column">
+                        <li class="nav-item">
+                            <a id="trend-ai" class="nav-link" href="trend-ai.html"><img class="img-fluid icones"
+                                    src="./img/Icons menu/Trend AI.png"> Trend AI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="creator-genie" class="nav-link" href="creator-genie.html"><img
+                                    class="img-fluid icones" src="./img/Icons menu/Creator Genie.png"> Creator Genie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="creator-flow" class="nav-link" href="creator-flow.html"><img class="img-fluid icones"
+                                    src="./img/Icons menu/Creator Flow.png"> Creator Flow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="creator-builder" class="nav-link" href="creator-builder.html"><img
+                                    class="img-fluid icones" src="./img/Icons menu/carbon_model-builder.png"> Creator
+                                Builder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="leads-ia" class="nav-link" href="leads-ia.html"><img class="img-fluid icones"
+                                    src="./img/Icons menu/stash_user-id.png"> Leads IA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a id="meus-projetos" class="nav-link" href="meus-projetos.html"><img class="img-fluid icones"
+                            src="./img/Icons menu/Meus projetos.png">
+                        Meus projetos
+                        <i class="fas fa-plus ms-auto"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="validados" class="nav-link" href="validados.html"><img class="img-fluid icones"
+                            src="./img/Icons menu/Conteúdos Validados.png"> Conteúdos Validados</a>
+                </li>
+                <li class="nav-item">
+                    <a id="plano" class="nav-link" href="plano.html"><img class="img-fluid icones"
+                            src="./img/Icons menu/Plano e assintura.png"> Plano e assinatura</a>
+                </li>
+                <li class="nav-item">
+                    <a id="suporte" class="nav-link" href="suporte.html"><img class="img-fluid icones"
+                            src="./img/Icons menu/Suporte.png">
+                        Suporte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navbar vertical -->
+    <div class="nav-vertical">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div class="input-group search-bar flex-grow-1 ms-5" style="max-width: 400px;">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Pesquise aqui">
+            </div>
+
+            <div class="profile-info d-flex align-items-center ms-auto">
+                <div class="d-flex align-items-center">
+                    <div class="icon-wrapper me-3">
+                        <img class="icones-roxos" src="./img/flowbite_bell-outline.png" alt="Notificação">
+                    </div>
+                    <div class="icon-wrapper me-3" data-bs-toggle="modal" data-bs-target="#giftModal">
+                        <img class="icones-roxos" src="./img/tabler_gift.png" alt="Presente">
+                    </div>
+                </div>
+                <div class="profile-details text-end me-3">
+                    <strong>Mateus Maranhão</strong>
+                    <span class="credits"><b>25 créditos</b> restantes</span>
+                    <div class="progress mt-1">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <img class="foto-perfil" src="./img/8c23a2b4-e8b4-4d0d-b0fb-df7a47a0a22d.jpeg" alt="Foto do Perfil">
+                <i onclick="toggleMenu()" class="fas fa-chevron-down ms-2 dropdown-icon" style="cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu dropdown do perfil-->
+    <div class="menu-dropdown" id="menuDropdown">
+        <a href="#"><img class="img-fluid icones-dropdown" src="./img/Icons menu/Inicio.png"> Início</a>
+        <a href="#"><img class="img-fluid icones-dropdown" src="./img/Icons menu/Perfil.png"> Perfil</a>
+        <button class="btn-sair mt-2"><i class="fas fa-sign-out-alt me-2"></i> Sair</button>
+    </div>
+
+    <!--input de pesquisa mobile-->
+    <div class="container input-pesquisa d-md-none d-block">
+        <input type="text" class="form-control" placeholder="Pesquise aqui">
+    </div>
+
+    <!--Conteudo principal-->
+    <div class="main-content">
+
+        <!-- Modal -->
+        <div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab-convidar" onclick="showTab('convidar')">Convidar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab-recompensas"
+                                    onclick="showTab('recompensas')">Recompensas</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="convidar" class="tab-content active">
+                            <h5>Dê 10% de desconto e Ganhe até 20% de desconto na sua mensalidade</h5>
+                            <p>Convide amigos e novas contas para a Pluug.ai e ofereça um desconto especial de 10%.</p>
+                            <button class="btn-convidar w-100"><img class="img-fluid me-2" src="./img/tabler_gift.png">
+                                Pluug.ai/convidado</button>
+                            <button class="btn-copiar mt-3">Copiar link de convite</button>
+                            <h6 class="mt-4 info-importante-titulo">Informações importantes</h6>
+                            <p class="info-importante mt-2">O desconto não é cumulativo e será aplicado apenas em 1
+                                única mensalidade.</p>
+                        </div>
+                        <div id="recompensas" class="tab-content">
+                            <h5 class="mb-3">Recompensas ganhas: 15%</h5>
+                            <div class="quando-receberei">
+                                <img class="img-fluid mb-3" src="./img/tabler_gift.png">
+                                <h6>Quando receberei minha recompensa?</h6>
+                                <p>A sua recompensa será o desconto aplicado na sua próxima mensalidade. O desconto não
+                                    é cumulativo, ele será aplicado apenas em 1 única mensalidade, até 30 dias após a
+                                    indicação.</p>
+                                <p>Caso seu plano seja anual, seu desconto será aplicado no ato da renovação</p>
+                            </div>
+                            <button class="btn-recolher mt-3">Recolher recompensa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="leads-ai py-4">
+            <div class="container">
+                <h1>Leads AI</h1>
+                <p class="mb-4">Gerencie, classifique, qualifique e desbloqueie o potencial dos seus Leads
+                </p>
+
+                <div class="row g-3">
+                    <!-- Card 1 - Template Planilha -->
+                    <div class="col-md-6">
+                        <div class="card-leads d-flex align-items-start">
+                            <img src="./img/leads icons/material-symbols_upload-rounded.png" width="40" class="me-3"
+                                alt="Ícone Planilha">
+                            <div>
+                                <h6 class="fw-bold mb-1">Template Planilha</h6>
+                                <p class="mb-0">Analise e otimize seu perfil no Instagram, Linkedin e outras redes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Importar Planilha -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card-leads d-flex align-items-start">
+                            <img src="./img/leads icons/bx_spreadsheet.png" width="40" class="me-3"
+                                alt="Ícone Importar">
+                            <div>
+                                <h6 class="fw-bold mb-1">Importar Planilha</h6>
+                                <p class="mb-0">Upload da lista de leads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parametros-analise py-4">
+            <div class="container">
+                <h5 class="mb-4">Parâmetros de Análise</h5>
+
+                <!-- Objetivo -->
+                <div class="card-analise mb-3 p-3">
+                    <p class="mb-2">Objetivo atual da análise:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="objetivo" id="pre-venda">
+                        <label class="form-check-label" for="pre-venda">Pré-venda</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="objetivo" id="nutricao">
+                        <label class="form-check-label" for="nutricao">Nutrição</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="objetivo" id="lancamento">
+                        <label class="form-check-label" for="lancamento">Lançamento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="objetivo" id="reengajamento">
+                        <label class="form-check-label" for="reengajamento">Reengajamento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="objetivo" id="diagnostico">
+                        <label class="form-check-label" for="diagnostico">Diagnóstico geral</label>
+                    </div>
+                </div>
+
+                <!-- Período -->
+                <div class="card-analise mb-3 p-3">
+                    <p class="mb-2">Período de análise:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="periodo" id="7dias">
+                        <label class="form-check-label" for="7dias">Últimos 7 dias</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="periodo" id="15dias">
+                        <label class="form-check-label" for="15dias">Últimos 15 dias</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="periodo" id="30dias">
+                        <label class="form-check-label" for="30dias">Últimos 30 dias</label>
+                    </div>
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input me-2" type="radio" name="periodo" id="personalizado">
+                        <label class="form-check-label me-2" for="personalizado">Personalizar</label>
+                        <input type="date" class="form-control form-control-sm w-auto" />
+                    </div>
+                </div>
+
+                <!-- Tipo de ação -->
+                <div class="card-analise mb-4 p-3">
+                    <p class="mb-2">Tipo de ação que deseja sugerir:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="acao" id="individual">
+                        <label class="form-check-label" for="individual">Estratégia individual por lead</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="acao" id="agrupamento">
+                        <label class="form-check-label" for="agrupamento">Agrupamento por perfil + estratégia
+                            única</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="acao" id="campanhas">
+                        <label class="form-check-label" for="campanhas">Sugestões de campanhas segmentadas</label>
+                    </div>
+                </div>
+
+                <!-- Botão -->
+                <div class="text-start">
+                    <button class="btn-criar-conteudo">
+                        <i class="fa-solid fa-file-circle-plus"></i> Analisar agora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="conteudo-gerado">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center">
+                            <button class="btn-conteudo-gerado">
+                                <i class="fa-solid fa-check"></i> Conteúdo gerado
+                            </button>
+                        </div>
+                        <p>Aproveite, valide, ajuste ou adapte seu conteúdo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="painel-resumo py-4">
+            <div class="container">
+                <!-- Painel Resumo -->
+                <div class="card-resumo p-3 mb-4">
+                    <p><strong>Painel Resumo (Top Summary Cards):</strong></p>
+                    <p>Total de Leads Importados: <strong>128</strong></p>
+                    <p>Leads Quentes: <strong>28</strong></p>
+                    <p>Leads com Fit: Alto: <strong>47</strong></p>
+                    <p>Ação recomendada prioritária: <strong>Propostas Comerciais</strong></p>
+                </div>
+
+                <!-- Planilha Completa -->
+                <h5 class="mb-3">Planilha completa</h5>
+                <div class="table-container">
+                    <table class="tabela-leads">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Score</th>
+                                <th>Fit</th>
+                                <th>Ação Sugerida</th>
+                                <th>Última interação</th>
+                                <th>Origem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ana Duarte</td>
+                                <td>24</td>
+                                <td>Alta</td>
+                                <td>Agendar reunião</td>
+                                <td>2 dias atrás</td>
+                                <td>Instagram</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Duarte</td>
+                                <td>24</td>
+                                <td>Alta</td>
+                                <td>Agendar reunião</td>
+                                <td>2 dias atrás</td>
+                                <td>Instagram</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Botão Exportar -->
+                <div class="text-start mt-3">
+                    <button class="btn-exportar">Exportar planilha</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
