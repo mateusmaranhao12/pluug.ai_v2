@@ -223,40 +223,38 @@
                 </p>
 
                 <div class="row g-3">
-                    <!-- Card 1 - Template Planilha -->
+                    <!-- Card 1 -->
                     <div class="col-md-6">
-                        <div style="cursor: pointer;" class="card-leads d-flex align-items-start"
-                            onclick="document.getElementById('fileTemplate').click()">
+                        <label for="input-template" style="cursor: pointer;"
+                            class="card-leads d-flex align-items-start">
                             <img src="./img/leads icons/material-symbols_upload-rounded.png" width="40" class="me-3"
                                 alt="Ícone Planilha">
                             <div>
                                 <h6 class="fw-bold mb-1">Template Planilha</h6>
                                 <p class="mb-0">Analise e otimize seu perfil no Instagram, Linkedin e outras redes.</p>
+                                <span id="nome-arquivo-template" class="text-muted small d-block mt-1"></span>
                             </div>
-                        </div>
-                        <!-- Input oculto -->
-                        <input type="file" id="fileTemplate" style="display: none;"
-                            onchange="handleFileUpload(event, 'Template Planilha')" />
+                        </label>
+                        <input type="file" id="input-template" class="d-none"
+                            onchange="handleFileUpload(event, 'template')">
                     </div>
 
-                    <!-- Card 2 - Importar Planilha -->
+                    <!-- Card 2 -->
                     <div class="col-md-6 mb-3">
-                        <div style="cursor: pointer;" class="card-leads d-flex align-items-start"
-                            onclick="document.getElementById('fileImportar').click()">
+                        <label for="input-importar" style="cursor: pointer;"
+                            class="card-leads d-flex align-items-start">
                             <img src="./img/leads icons/bx_spreadsheet.png" width="40" class="me-3"
                                 alt="Ícone Importar">
                             <div>
                                 <h6 class="fw-bold mb-1">Importar Planilha</h6>
                                 <p class="mb-0">Upload da lista de leads</p>
+                                <span id="nome-arquivo-importar" class="text-muted small d-block mt-1"></span>
                             </div>
-                        </div>
-                        <!-- Input oculto -->
-                        <input type="file" id="fileImportar" style="display: none;"
-                            onchange="handleFileUpload(event, 'Importar Planilha')" />
+                        </label>
+                        <input type="file" id="input-importar" class="d-none"
+                            onchange="handleFileUpload(event, 'importar')">
                     </div>
                 </div>
-
-            </div>
         </section>
 
         <section class="parametros-analise py-4">

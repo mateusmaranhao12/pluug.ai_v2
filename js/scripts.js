@@ -160,3 +160,12 @@ function fecharModalTutorialPorFora(event, id) {
 function visualizarConteudo() {
     window.location.href = 'visualizar-conteudo.html'
 }
+
+//upload de arquivos leads ai
+function handleFileUpload(event, tipo) {
+    const file = event.target.files[0];
+    if (file) {
+        const spanId = tipo === 'template' ? 'nome-arquivo-template' : 'nome-arquivo-importar';
+        document.getElementById(spanId).textContent = `Arquivo selecionado: ${file.name}`;
+    }
+}
