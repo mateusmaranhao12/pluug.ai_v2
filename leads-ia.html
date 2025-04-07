@@ -219,43 +219,77 @@
         <section class="leads-ai py-4">
             <div class="container">
                 <h1>Leads AI</h1>
-                <p class="mb-4">Gerencie, classifique, qualifique e desbloqueie o potencial dos seus Leads
-                </p>
+                <p class="mb-4">Gerencie, classifique, qualifique e desbloqueie o potencial dos seus Leads</p>
 
                 <div class="row g-3">
-                    <!-- Card 1 -->
+                    <!-- Card 1 - Template -->
                     <div class="col-md-6">
-                        <label for="input-template" style="cursor: pointer;"
-                            class="card-leads d-flex align-items-start">
+                        <div style="cursor: pointer;" class="card-leads d-flex align-items-start"
+                            onclick="abrirModalPlanilha('modalTemplatePlanilha')">
                             <img src="./img/leads icons/bx_spreadsheet.png" width="40" class="me-3"
-                                alt="Ícone Planilha">
+                                alt="Ícone Planilha" />
                             <div>
                                 <h6 class="fw-bold mb-1">Template Planilha</h6>
                                 <p class="mb-0">Analise e otimize seu perfil no Instagram, Linkedin e outras redes.</p>
-                                <span id="nome-arquivo-template" class="text-muted small d-block mt-1"></span>
                             </div>
-                        </label>
-                        <input type="file" id="input-template" class="d-none"
-                            onchange="handleFileUpload(event, 'template')">
+                        </div>
                     </div>
 
-                    <!-- Card 2 -->
+                    <!-- Card 2 - Importar -->
                     <div class="col-md-6 mb-3">
-                        <label for="input-importar" style="cursor: pointer;"
-                            class="card-leads d-flex align-items-start">
+                        <div style="cursor: pointer;" class="card-leads d-flex align-items-start"
+                            onclick="abrirModalPlanilha('modalImportarPlanilha')">
                             <img src="./img/leads icons/material-symbols_upload-rounded.png" width="40" class="me-3"
-                                alt="Ícone Importar">
+                                alt="Ícone Importar" />
                             <div>
                                 <h6 class="fw-bold mb-1">Importar Planilha</h6>
                                 <p class="mb-0">Upload da lista de leads</p>
-                                <span id="nome-arquivo-importar" class="text-muted small d-block mt-1"></span>
                             </div>
-                        </label>
-                        <input type="file" id="input-importar" class="d-none"
-                            onchange="handleFileUpload(event, 'importar')">
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
+
+        <!-- Modal Template Planilha -->
+        <div id="modalTemplatePlanilha" class="modal-upload"
+            onclick="fecharModalPorForaPlanilha(event, 'modalTemplatePlanilha')">
+            <div class="modal-upload-content position-relative" onclick="event.stopPropagation()">
+
+                <!-- Ícone X FontAwesome -->
+                <i class="fas fa-times close-modal-planilha" onclick="fecharModalPlanilha('modalTemplatePlanilha')"></i>
+
+                <h5 class="fw-bold">Template Planilha</h5>
+                <p class="text-muted">Realize o Upload da Lista de Leads</p>
+
+                <label for="fileTemplate" class="upload-box">
+                    <i class="fas fa-folder-open"></i> Adicionar arquivo <i class="fas fa-plus-circle ms-2"></i>
+                </label>
+                <input type="file" id="fileTemplate" class="d-none"
+                    onchange="handleUploadFilePlanilha(event, 'template')" />
+                <span id="nomeArquivoTemplate" class="text-muted small d-block mt-2"></span>
+            </div>
+        </div>
+
+        <!-- Modal Importar Planilha -->
+        <div id="modalImportarPlanilha" class="modal-upload"
+            onclick="fecharModalPorForaPlanilha(event, 'modalImportarPlanilha')">
+            <div class="modal-upload-content position-relative" onclick="event.stopPropagation()">
+
+                <!-- Ícone X FontAwesome -->
+                <i class="fas fa-times close-modal-planilha" onclick="fecharModalPlanilha('modalImportarPlanilha')"></i>
+
+                <h5 class="fw-bold">Importar Planilha</h5>
+                <p class="text-muted">Realize o Upload da Lista de Leads</p>
+
+                <label for="fileImportar" class="upload-box">
+                    <i class="fas fa-folder-open"></i> Adicionar arquivo <i class="fas fa-plus-circle ms-2"></i>
+                </label>
+                <input type="file" id="fileImportar" class="d-none"
+                    onchange="handleUploadFilePlanilha(event, 'importar')" />
+                <span id="nomeArquivoImportar" class="text-muted small d-block mt-2"></span>
+            </div>
+        </div>
 
         <section class="parametros-analise py-4">
             <div class="container">

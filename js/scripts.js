@@ -161,11 +161,25 @@ function visualizarConteudo() {
     window.location.href = 'visualizar-conteudo.html'
 }
 
-//upload de arquivos leads ai
-function handleFileUpload(event, tipo) {
+function abrirModalPlanilha(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+
+function fecharModalPlanilha(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function fecharModalPorForaPlanilha(event, id) {
+    const modalContent = document.querySelector(`#${id} .modal-upload-content`);
+    if (!modalContent.contains(event.target)) {
+        fecharModalPlanilha(id);
+    }
+}
+
+function handleUploadFilePlanilha(event, tipo) {
     const file = event.target.files[0];
     if (file) {
-        const spanId = tipo === 'template' ? 'nome-arquivo-template' : 'nome-arquivo-importar';
+        const spanId = tipo === 'template' ? 'nomeArquivoTemplate' : 'nomeArquivoImportar';
         document.getElementById(spanId).textContent = `Arquivo selecionado: ${file.name}`;
     }
 }
