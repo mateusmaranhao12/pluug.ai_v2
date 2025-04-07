@@ -155,3 +155,8 @@ function fecharModalTutorialPorFora(event, id) {
         fecharModalTutorial(id);
     }
 }
+
+//visualizar conteudo
+function visualizarConteudo() {
+    window.location.href = 'visualizar-conteudo.html'
+}
