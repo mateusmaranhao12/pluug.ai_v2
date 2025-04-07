@@ -225,7 +225,8 @@
                 <div class="row g-3">
                     <!-- Card 1 - Template Planilha -->
                     <div class="col-md-6">
-                        <div class="card-leads d-flex align-items-start">
+                        <div style="cursor: pointer;" class="card-leads d-flex align-items-start"
+                            onclick="document.getElementById('fileTemplate').click()">
                             <img src="./img/leads icons/material-symbols_upload-rounded.png" width="40" class="me-3"
                                 alt="Ícone Planilha">
                             <div>
@@ -233,11 +234,15 @@
                                 <p class="mb-0">Analise e otimize seu perfil no Instagram, Linkedin e outras redes.</p>
                             </div>
                         </div>
+                        <!-- Input oculto -->
+                        <input type="file" id="fileTemplate" style="display: none;"
+                            onchange="handleFileUpload(event, 'Template Planilha')" />
                     </div>
 
                     <!-- Card 2 - Importar Planilha -->
                     <div class="col-md-6 mb-3">
-                        <div class="card-leads d-flex align-items-start">
+                        <div style="cursor: pointer;" class="card-leads d-flex align-items-start"
+                            onclick="document.getElementById('fileImportar').click()">
                             <img src="./img/leads icons/bx_spreadsheet.png" width="40" class="me-3"
                                 alt="Ícone Importar">
                             <div>
@@ -245,8 +250,12 @@
                                 <p class="mb-0">Upload da lista de leads</p>
                             </div>
                         </div>
+                        <!-- Input oculto -->
+                        <input type="file" id="fileImportar" style="display: none;"
+                            onchange="handleFileUpload(event, 'Importar Planilha')" />
                     </div>
                 </div>
+
             </div>
         </section>
 
