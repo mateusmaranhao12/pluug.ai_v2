@@ -1,0 +1,26 @@
+.creator-builder .flow-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.creator-builder .flow-card:hover {
+    transform: translateY(-4px);
+}
+
+.creator-builder h2 {
+    color: #3EBBEB;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.creator-builder p {
+    color: #8A8A8A;
+}
+
+.creator-builder .flow-card p {
+    color: #8A8A8A;
+    font-size: 14px;
+}

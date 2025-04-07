@@ -23,7 +23,9 @@ body.validados #navegacao a#validados,
 body.plano #navegacao a#plano,
 body.suporte #navegacao a#suporte,
 body.configuracoes #navegacao a#configuracoes,
-body.comunidade #navegacao a#comunidade {
+body.comunidade #navegacao a#comunidade,
+body.creator-builder #navegacao a#creator-builder,
+body.leads-ia #navegacao a#leads-ia {
     background: none;
     border: 1px solid rgba(19, 180, 238, 1);
     color: rgb(19, 180, 238);
