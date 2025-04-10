@@ -169,14 +169,3 @@
 .close-modal-planilha:hover {
     color: #000;
 }
-
-@media (min-width: 768px) and (max-width: 1600px) {
-
-    .leads-ai .card-leads h6 {
-        font-size: 0.9rem;
-    }
-
-    .leads-ai .card-leads p {
-        font-size: 13px;
-    }
-}
